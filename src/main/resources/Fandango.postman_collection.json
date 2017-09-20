@@ -1,0 +1,223 @@
+{
+	"id": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+	"name": "Fandango",
+	"description": "",
+	"order": [
+		"335b1f62-c7b7-189c-e340-3db4b9677de1",
+		"7b1c2b4f-51a4-33b4-5350-1f1ed088518e",
+		"145b8ce7-0616-dd4a-a2cc-8b86f5b0e906",
+		"50e46982-4918-6c84-7fb0-e8c6c8084258",
+		"4a86a9c8-a648-539d-6ee8-ad1ae25086d2",
+		"dc5c55b5-a8fe-3bbc-64d0-10e9ca66ae3b",
+		"efdf7398-0678-8631-4ddf-fcca7bcc51f4"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1505847944081,
+	"owner": "782995",
+	"public": false,
+	"requests": [
+		{
+			"id": "145b8ce7-0616-dd4a-a2cc-8b86f5b0e906",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/cart/10",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505913087942,
+			"name": "Add item to car",
+			"description": "",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"responses": [],
+			"rawModeData": "{\n\t\"id\":6,\n\t\"title\":\"Frtua\",\n\t\"price\":\"200\"\n}"
+		},
+		{
+			"id": "335b1f62-c7b7-189c-e340-3db4b9677de1",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/cart",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create cart",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505847963200,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\":10\n}"
+		},
+		{
+			"id": "4a86a9c8-a648-539d-6ee8-ad1ae25086d2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/cart/clean/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"data": null,
+			"dataMode": "params",
+			"name": "Clear car",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505861190321,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "50e46982-4918-6c84-7fb0-e8c6c8084258",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/cart/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Delete item from cart",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505858928291,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"id\": 2\n}"
+		},
+		{
+			"id": "7b1c2b4f-51a4-33b4-5350-1f1ed088518e",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/cart/10",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505849765888,
+			"name": "Get cart ",
+			"description": "",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"responses": []
+		},
+		{
+			"id": "dc5c55b5-a8fe-3bbc-64d0-10e9ca66ae3b",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/cart/payment/10",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"data": null,
+			"dataMode": "params",
+			"name": "Amount to Pay",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1505861592922,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "efdf7398-0678-8631-4ddf-fcca7bcc51f4",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8080/articles?start=0&size=10",
+			"queryParams": [
+				{
+					"key": "start",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "size",
+					"value": "10",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1505913112316,
+			"name": "Get paged articles",
+			"description": "",
+			"collectionId": "be438d08-a356-ebf6-e360-9b9015c53dd1",
+			"responses": []
+		}
+	]
+}
