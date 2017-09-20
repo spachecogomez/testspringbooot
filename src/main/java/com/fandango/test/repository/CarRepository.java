@@ -2,7 +2,6 @@ package com.fandango.test.repository;
 
 import com.fandango.test.model.Car;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 

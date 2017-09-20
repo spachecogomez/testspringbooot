@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -15,8 +14,12 @@ public class ArticlesController {
 
   private Logger log = LoggerFactory.getLogger(ArticlesController.class);
 
-  @Autowired
+
   private ArticleRepository carItemRepository;
+
+  public ArticlesController(ArticleRepository carItemRepository){
+    this.carItemRepository = carItemRepository;
+  }
 
   public List<CarItem> getAllItems(Pageable pageable){
     log.debug("Getting all the items ");
